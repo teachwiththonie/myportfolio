@@ -1,0 +1,107 @@
+/* CSS reset removes all margins and paddings that we did not set */
+/* This allows developers to use the webpage as their blank canvas. */
+* {
+	margin: 0;
+	padding: 0;
+	/* includes the padding and border to the total width of the elements instead of adding to it. */
+	box-sizing: border-box;
+	/* default font */
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	background-color: #eee;
+	width: 75%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+nav, .footer {
+	background-color: #fff;
+	height: 10vh;
+	border-bottom: 5px solid #6dccde;
+	line-height: 10vh;
+	text-align: center;
+}
+
+nav a {
+	text-decoration: none;
+	color: #444;
+}
+
+.nav-item {
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+.active {
+	background-color: #444;
+	color: #6dccde;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+#header {
+	text-align: center;
+}
+
+h1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h1, .footer {
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+}
+
+h2 {
+	margin-bottom: 0;
+}
+
+#main table {
+	width: 100%;
+	background-color: #fff;
+	text-align: center;	
+}
+
+.section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.section ul, .section ol {
+	list-style: none;
+	display: flex;
+}
+
+.section li {
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+.red-section {
+	background-color: red;
+}
+
+.blue-section {
+	background-color: blue;
+}
+
+.section > h2 {
+	background-color: orange;
+	padding: 20px;
+}
+
+.footer {
+	border-top: 5px solid #6dccde;
+	border-bottom: none;
+}
+
+#contact-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
